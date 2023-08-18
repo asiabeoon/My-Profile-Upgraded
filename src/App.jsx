@@ -1,26 +1,52 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css';
-import Nav from "./components/Nav";
-import ProjectList from "./components/ProjectList";
-import 'bootstrap/dist/css/bootstrap.min.css';
+// Bringing in the required import from 'react-router-dom'
+// import { Outlet } from 'react-router-dom';
+import Nav from './components/Naviagation/Nav';
+import React, { useState } from 'react';
+import PortfolioLayout from './app/Header';
+import AboutPage from './app/AboutPage';
+// import Profile from './Profile';
+import Contact from './app/ContactPage';
+// import Resume from './app/ResumePage';
 
-function App() {
+const App = () => {
+  const [selectedNav, setSelectedNav] = useState("About Me");
+
+  const renderSection = () => {
+    switch (selectedNav) {
+      case "About Me":
+        return <AboutPage />;
+      case "Portfolio":
+        return <PortfolioLayout />;
+      case "Contact":
+        return <Contact />;
+      case "Resume":
+    //     return <ResumePage />;
+    //   default:
+        return null;
+    }
+  };
 
   return (
-    <>
+    <div>
       <Nav />
-      <ProjectList />
-      <div className="card">
-  <div className="card-body">
-    <h5 className="card-title">Card title</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" className="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-    </>
-  )
-}
+      {renderSection()}
+    </div>
+  );
+};
+
 
 export default App;
+
+// import React from 'react';
+// import PortfolioLayout from './Header';
+
+// const App = () => {
+//   return (
+//     <div>
+//       <PortfolioLayout />
+//     </div>
+//   );
+// };
+
+// export default App;
+
