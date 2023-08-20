@@ -1,14 +1,12 @@
 // import { Link } from 'react-router-dom';
-import Navbar from './Navbar';
 import Nav from './Nav'; // Import the Nav component
 
-const PortfolioLayout = () => {
+const PortfolioLayout = ({selectedNav,setSelectedNav}) => {
   return (
     <div>
       
       <header>
-        <Navbar/>
-        <Nav /> {/* Include the Nav component here */}
+        <Nav  selectedNav= {selectedNav} setSelectedNav={setSelectedNav}/> {/* Include the Nav component here */}
         <h1>ASIA HASHIM-BEY</h1>
         {/* Additional header content goes here -Add image*/}
       </header>

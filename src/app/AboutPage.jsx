@@ -1,17 +1,15 @@
 import React from 'react';
-import React from 'react';
-import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-// import aboutImage from '../assets/images/'
+import aboutImage from '../assets/images/me-hairout-casual.jpeg'
 
 export default function AboutPage() {
   return (
     <div aboutPage="container pt-4">
-      <Header /> {/* Include the Header component */}
+      
       <h1>About Me</h1>
 
-      {/* <img src={aboutImage} alt="About us" /> */}
+      <img src={aboutImage} alt="About us" />
 
       <p>
         Hi there! My name is Asia Hashim-Bey, and I'm thrilled to share a little bit about myself with you. 
@@ -74,7 +72,7 @@ export default function AboutPage() {
         </div>
       </section>
     
-      <Footer /> {/* Include the Footer component */}
+      
     </div>
   );
 }

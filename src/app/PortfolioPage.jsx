@@ -3,11 +3,11 @@ import React from 'react';
 
 
 
-export default function ResumePage() {
+export default function PortfolioPage() {
     return (
       <div aboutPage="container pt-4">
         
-        <h1>My Resume</h1>
+        <h1>Heading</h1>
         
         <div>
             <a href="resume_link.pdf" download>Download Resume</a>

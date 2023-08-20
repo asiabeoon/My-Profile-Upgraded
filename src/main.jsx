@@ -1,71 +1,46 @@
+import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
-// Imports for Header and Navigation
 
-import Header from "./components/Header";
-// import Navbar from "./components/Navbar";
-import Nav from "./components/Nav";
+// Imports for app Sections
 
-import AboutPage from "./app/AboutPage";
-// import Footer from "./components/Footer";
-import { useLocation } from "react-router-dom";
-
-function App() {
-  const currentPage = useLocation().pathname;
-
-  return (
-    <div>
-      <Header>
-        <Nav currentPage={currentPage} />
-      </Header>
-      <main>
-        <AboutPage currentPage={currentPage} />
-      </main>
-      <Footer />
-    </div>
-  );
-}
-
-export default App;
-
-// // Bringing in the pages the router will use to conditionally show the appropriate views
+import App from './App';
+import Contact from './app/ContactPage';
+import About from './app/AboutPage';
+import Resume from './app/ResumePage';
 
 
-// import App from './App';
-// import ErrorPage from './app/ErrorPage';
-// import AboutPage from './app/AboutPage';
-// // import ResumePage from './app/ResumePage';
-// import ContactPage from './app/ContactPage';
+// Define the accessible routes, and which components respond to which URL
 
-// // Define the accessible routes, and which components respond to which URL
+
 // const router = createBrowserRouter([
 //   {
 //     path: '/',
 //     element: <App />,
-//     errorElement: <ErrorPage />,
+//     default: '/AboutPage', // Set default route to AboutPage
 //     children: [
 //       {
-//         index: true,
-//         element: <HomePage />,
+//         path: '/AboutPage',
+//         element: <About />,
 //       },
 //       {
-//         path: 'profile/:id',
-//         element: <ProfilePage />,
+//         path: '/ResumePage',
+//         element: <Resume />,
 //       },
 //       {
-//         path: 'about',
-//         element: <AboutPage />,
-//       },
-//       {
-//         // path: 'resume',
-//         // element: <ResumePage />,
-//       },
-//       {
-//         path: 'contact',
-//         element: <ContactPage />,
+//         path: '/ContactPage',
+//         element: <Contact />,
 //       },
 //     ],
 //   },
 // ]);
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  // <RouterProvider router={router}>
+    <App /> 
+  /* </RouterProvider> */
+);
+
+export default App;
 
