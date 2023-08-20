@@ -1,51 +1,71 @@
-import ReactDOM from 'react-dom/client';
-// Bringing in the required imports from 'react-router-dom' to set up application routing behavior
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
-// Bringing in the pages the router will use to conditionally show the appropriate views
-import App from './App';
-import ErrorPage from './app/ErrorPage';
-import HomePage from './app/HomePage';
-import AboutPage from './app/AboutPage';
-// import ResumePage from './app/ResumePage';
-import ProfilePage from './app/ProfilePage';
-import ContactPage from './app/ContactPage';
+// Imports for Header and Navigation
 
-// Define the accessible routes, and which components respond to which URL
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        index: true,
-        element: <HomePage />,
-      },
-      {
-        path: 'profile/:id',
-        element: <ProfilePage />,
-      },
-      {
-        path: 'about',
-        element: <AboutPage />,
-      },
-      {
-        // path: 'resume',
-        // element: <ResumePage />,
-      },
-      {
-        path: 'contact',
-        element: <ContactPage />,
-      },
-    ],
-  },
-]);
+import Header from "./components/Header";
+// import Navbar from "./components/Navbar";
+import Nav from "./components/Nav";
 
-// Render the RouterProvider component
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router} />
-);
+import AboutPage from "./app/AboutPage";
+// import Footer from "./components/Footer";
+import { useLocation } from "react-router-dom";
+
+function App() {
+  const currentPage = useLocation().pathname;
+
+  return (
+    <div>
+      <Header>
+        <Nav currentPage={currentPage} />
+      </Header>
+      <main>
+        <AboutPage currentPage={currentPage} />
+      </main>
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
+
+// // Bringing in the pages the router will use to conditionally show the appropriate views
+
+
+// import App from './App';
+// import ErrorPage from './app/ErrorPage';
+// import AboutPage from './app/AboutPage';
+// // import ResumePage from './app/ResumePage';
+// import ContactPage from './app/ContactPage';
+
+// // Define the accessible routes, and which components respond to which URL
+// const router = createBrowserRouter([
+//   {
+//     path: '/',
+//     element: <App />,
+//     errorElement: <ErrorPage />,
+//     children: [
+//       {
+//         index: true,
+//         element: <HomePage />,
+//       },
+//       {
+//         path: 'profile/:id',
+//         element: <ProfilePage />,
+//       },
+//       {
+//         path: 'about',
+//         element: <AboutPage />,
+//       },
+//       {
+//         // path: 'resume',
+//         // element: <ResumePage />,
+//       },
+//       {
+//         path: 'contact',
+//         element: <ContactPage />,
+//       },
+//     ],
+//   },
+// ]);
+

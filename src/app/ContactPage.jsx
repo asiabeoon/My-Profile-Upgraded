@@ -1,5 +1,10 @@
 // this page's styling is from index.css
 import React, { useState } from 'react';
+import React from 'react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+
+
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -62,6 +67,9 @@ const ContactForm = () => {
   };
 
   return (
+    <>
+    <Header />
+
     <form onSubmit={handleSubmit}>
       <div>
         <label>Name</label>
@@ -97,7 +105,12 @@ const ContactForm = () => {
       </div>
       <button type="submit">Submit</button>
     </form>
+    
+    <Footer />
+    </>
   );
+
+  
 };
 
 export default ContactForm;
