@@ -9,18 +9,19 @@ export default function Nav({ setSelectedNav }) {
   return (
     <Navbar
       links={[
-        <li key={1} className="nav-link text-light" to="/" onClick={() => handleNavClick("My Portfolio")}>
-          Portfilio
-        </li>,
-        <li key={2} className="nav-link text-light" to="/about" onClick={() => handleNavClick("About Me")}>
+        <button key={2} className="nav-link text-light" to="/about" onClick={() => handleNavClick("About Me")}>
           About Me
-        </li>,
-        <li key={3} className="nav-link text-light" to="/resume" onClick={() => handleNavClick("Resume")}>
+        </button>,
+        <button key={1} className="nav-link text-light" to="/" onClick={() => handleNavClick("My Portfolio")}>
+          Portfilio
+        </button>,
+        
+        <button key={3} className="nav-link text-light" to="/resume" onClick={() => handleNavClick("Resume")}>
           Resume
-        </li>,
-        <li key={4} className="nav-link text-light" to="/contact" onClick={() => handleNavClick("Contact Me")}>
+        </button>,
+        <button key={4} className="nav-link text-light" to="/contact" onClick={() => handleNavClick("Contact Me")}>
           Contact Me
-        </li>,
+        </button>,
       ]}
     />
   );
