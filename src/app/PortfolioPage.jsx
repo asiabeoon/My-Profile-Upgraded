@@ -1,4 +1,5 @@
 import React from 'react';
+import weeklyOrganizer from '../assets/images/weekly-organizer.png'
 
 export default function PortfolioPage() {
   return (
@@ -7,13 +8,13 @@ export default function PortfolioPage() {
 
       <div className="image-grid">
         <div className="image-card">
-          <a href="https://example.com/app1" target="_blank" rel="noopener noreferrer">
-            <img src="path/to/app1-image.jpg" alt="App 1" />
+          <a href="https://asiabeoon.github.io/My-Day-Scheduler/" target="_blank" rel="noopener noreferrer">
+            <img src={weeklyOrganizer} alt="App 1" />
           </a>
           <div className="image-card-title">
-            <h3>App 1</h3>
+            <h3>Weekly Organizer</h3>
             <p>
-              <a href="https://github.com/your-username/app1" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/asiabeoon/My-Day-Scheduler/" target="_blank" rel="noopener noreferrer">
                 GitHub Repository
               </a>
             </p>

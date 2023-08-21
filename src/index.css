@@ -114,6 +114,11 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+/* Styling for portfolio */
+.image-card img {
+width:100px
+}
 /* https://blog.logrocket.com/five-cool-css-header-styles-with-cross-browser-compatibility/ */
 h1 {
   font-size: 5rem;
