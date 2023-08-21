@@ -7,9 +7,11 @@ export default function AboutPage() {
   return (
     <div aboutPage="container pt-4">
       
-      <h1>About Me</h1>
+      <h2>About Me</h2>
 
-      <img src={aboutImage} alt="About us" />
+      <div className="about-image">
+      <img src={aboutImage} alt="About us" className="medium-image" />
+      </div>
 
       <p>
         Hi there! My name is Asia Hashim-Bey, and I'm thrilled to share a little bit about myself with you. 
