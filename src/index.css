@@ -179,9 +179,13 @@ button:focus-visible {
 
 /* Style for Portfolio Page */
 .image-card{
-  width: 100%;
+  width: 150%;
   display: flex;
   justify-content: center;
+}
+
+.image-card h3 {
+  margin: 0;
 }
 /*** Style for Contact Page */
 

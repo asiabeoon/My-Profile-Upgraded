@@ -11,17 +11,17 @@ const Footer = () => {
       </a>
 
       {/* LinkedIn Link */}
-      <a href="https://linkedin.com/in/developer-username" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.linkedin.com/in/asia-hashim-bey/" target="_blank" rel="noopener noreferrer">
         <i className="fab fa-linkedin"></i>
       </a>
 
       {/* Third Platform Link (example: Stack Overflow) */}
-      <a href="https://stackoverflow.com/users/developer-username" target="_blank" rel="noopener noreferrer">
+      <a href="https://stackoverflow.com/users/19272797/ajacodes" target="_blank" rel="noopener noreferrer">
         <i className="fab fa-stack-overflow"></i>
       </a>
 
       {/* Third Platform Link (example: Twitter) */}
-      <a href="https://twitter.com/developer-username" target="_blank" rel="noopener noreferrer">
+      <a href="https://twitter.com/bey_hashim20090" target="_blank" rel="noopener noreferrer">
         <i className="fab fa-twitter"></i>
       </a>
     </footer>
