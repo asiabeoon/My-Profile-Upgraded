@@ -35,7 +35,7 @@ export default function PortfolioPage() {
           </a>
           <div className="image-card-title">
             <p>
-              <a href="My Profile https://asiabeoon.github.io/Challenge-2-My-Profile/" target="_blank" rel="noopener noreferrer">
+              <a href="//asiabeoon.github.io/My-Profile-and-Portfolio/" target="_blank" rel="noopener noreferrer">
                 My First Profile
               </a>
             </p>
