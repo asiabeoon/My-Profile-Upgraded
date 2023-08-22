@@ -192,15 +192,7 @@ button:focus-visible {
   align-items: center;
   text-align: center;
 }
-/* .image-card{
-  width: 150%;
-  display: flex;
-  justify-content: center;
-}
 
-.image-card h3 {
-  margin: 0;
-} */
 /*** Style for Contact Page */
 
 .contact-form {

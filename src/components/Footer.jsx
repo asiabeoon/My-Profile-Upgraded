@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer>
+    <footer style={{ textAlign: 'center' }}>
       <p>Click on the links below to connect on different platforms!</p>
 
       {/* GitHub Link */}
