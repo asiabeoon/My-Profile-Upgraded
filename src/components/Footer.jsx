@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer>
-      <p>Optional Text</p>
+      <p>Click on the links below to connect on different platforms!</p>
 
       {/* GitHub Link */}
       <a href="https://github.com/developer-asiabeoon" target="_blank" rel="noopener noreferrer">

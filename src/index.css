@@ -98,6 +98,7 @@ p{
   margin-left: 50px;
   margin-right: 50px;
   font-weight: bold;
+  text-align: center;
 }
 
 a {
@@ -132,6 +133,7 @@ h1 {
 h2 {
   font-size: 2.2em;
   line-height: 1.1;
+  padding-bottom: 1.5%;
    text-align: center ;
   background-color: #0989f9;
 }
@@ -175,13 +177,19 @@ button:focus-visible {
   }
 }
 
-
-/*** Style for Contact Page */
-
-/* container {
+/* Style for Portfolio Page */
+.image-card{
+  width: 100%;
   display: flex;
   justify-content: center;
-} */
+}
+/*** Style for Contact Page */
+
+.contact-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 form {
   width: 400px;

@@ -1,8 +1,36 @@
-# React + Vite
+# My Portfolio Upgraded
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This project is a single-page portfolio website built using JavaScript and React. It showcases my personal information, projects, skills, and contact details. The portfolio includes a navigation bar, header, and footer, which are implemented across all sections to provide a consistent user interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Installation
+
+No Installation needed.
+
+
+## Usage
+
+This webpage is primarily for viewing the User can click the navigation tabs to view the pages. The viewer can also enter information into the Contact form.
+
+
+Link to deployed portfolio
+
+<a href= "https://thriving-cocada-5f1b7f.netlify.app/"> My Portfolio Upgraded</a>
+
+
+
+
+## Credits
+
+This portfolio was created with assistance from Chat GPT, a language generation model developed by OpenAI. Chat GPT provided helpful suggestions and guidance throughout the development process.
+
+## License
+
+Refer to license file
+
+---
+
+
+

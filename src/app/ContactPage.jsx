@@ -65,8 +65,9 @@ const ContactForm = () => {
   };
 
   return (
-    <>
-
+  
+    <div className='contact-form'>
+     
 
     <form onSubmit={handleSubmit}>
       <div>
@@ -105,7 +106,7 @@ const ContactForm = () => {
     </form>
     
    
-    </>
+    </div>
   );
 
   

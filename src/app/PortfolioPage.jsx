@@ -1,5 +1,11 @@
 import React from 'react';
 import weeklyOrganizer from '../assets/images/weekly-organizer.png'
+import firstProfile from '../assets/images/my-first-profile.png'
+import passwordGenerator from '../assets/images/password-generator.png'
+import noteTaker from '../assets/images/my-note-taker.png'
+import textEditor from '../assets/images/text-editor.png'
+import ecommerce from '../assets/images/ecommerce.png'
+
 
 export default function PortfolioPage() {
   return (
@@ -8,14 +14,14 @@ export default function PortfolioPage() {
 
       <div className="image-grid">
         <div className="image-card">
+            <h3>Day Scheduler</h3>
           <a href="https://asiabeoon.github.io/My-Day-Scheduler/" target="_blank" rel="noopener noreferrer">
             <img src={weeklyOrganizer} alt="App 1" />
           </a>
           <div className="image-card-title">
-            <h3>Weekly Organizer</h3>
             <p>
               <a href="https://github.com/asiabeoon/My-Day-Scheduler/" target="_blank" rel="noopener noreferrer">
-                GitHub Repository
+                Day Scheduler GitHub Repository
               </a>
             </p>
           </div>
@@ -23,14 +29,14 @@ export default function PortfolioPage() {
 
         <div className="image-grid">
         <div className="image-card">
+        <h3>My First Profile</h3>
           <a href="https://example.com/app1" target="_blank" rel="noopener noreferrer">
-            <img src="path/to/app1-image.jpg" alt="App 1" />
+            <img src={firstProfile} alt="App 2" />
           </a>
           <div className="image-card-title">
-            <h3>App 2</h3>
             <p>
-              <a href="https://github.com/your-username/app1" target="_blank" rel="noopener noreferrer">
-                GitHub Repository
+              <a href="My Profile https://asiabeoon.github.io/Challenge-2-My-Profile/" target="_blank" rel="noopener noreferrer">
+                My First Profile
               </a>
             </p>
           </div>
@@ -38,14 +44,15 @@ export default function PortfolioPage() {
 
               <div className="image-grid">
         <div className="image-card">
+          <h3>Password Generator</h3>
           <a href="https://example.com/app1" target="_blank" rel="noopener noreferrer">
-            <img src="path/to/app1-image.jpg" alt="App 1" />
+            <img src={passwordGenerator} alt="App 3" />
           </a>
           <div className="image-card-title">
-            <h3>App 3</h3>
             <p>
-              <a href="https://github.com/your-username/app1" target="_blank" rel="noopener noreferrer">
-                GitHub Repository
+              <a href="https://asiabeoon.github.io/My-Code-Generator/ 
+                    " target="_blank" rel="noopener noreferrer">
+               Password Generator
               </a>
             </p>
           </div>
@@ -53,14 +60,14 @@ export default function PortfolioPage() {
 
         <div className="image-grid">
         <div className="image-card">
+          <h3>Note Taker</h3>
           <a href="https://example.com/app1" target="_blank" rel="noopener noreferrer">
-            <img src="path/to/app1-image.jpg" alt="App 1" />
+            <img src={noteTaker}alt="App 4" />
           </a>
           <div className="image-card-title">
-            <h3>App 4</h3>
             <p>
-              <a href="https://github.com/your-username/app1" target="_blank" rel="noopener noreferrer">
-                GitHub Repository
+              <a href=" https://asiabeoon.github.io/My-Note-Taker/" target="_blank" rel="noopener noreferrer">
+               Note Taker
               </a>
             </p>
           </div>
@@ -68,28 +75,28 @@ export default function PortfolioPage() {
 
         <div className="image-grid">
         <div className="image-card">
+        <h3>Text Editor</h3>
           <a href="https://example.com/app1" target="_blank" rel="noopener noreferrer">
-            <img src="path/to/app1-image.jpg" alt="App 1" />
+            <img src={textEditor} alt="App 5" />
           </a>
           <div className="image-card-title">
-            <h3>App 5</h3>
             <p>
               <a href="https://github.com/your-username/app1" target="_blank" rel="noopener noreferrer">
-                GitHub Repository
+                Text Editor
               </a>
             </p>
           </div>
         </div>
 
         <div className="image-card">
+        <h3>E Commerce Site</h3>
           <a href="https://example.com/app6" target="_blank" rel="noopener noreferrer">
-            <img src="path/to/app6-image.jpg" alt="App 6" />
+            <img src={ecommerce} alt="App 6" />
           </a>
           <div className="image-card-title">
-            <h3>App 6</h3>
             <p>
-              <a href="https://github.com/your-username/app6" target="_blank" rel="noopener noreferrer">
-                GitHub Repository
+              <a href="https://github.com/asiabeoon/E-Commerce-Template" target="_blank" rel="noopener noreferrer">
+                E Commerce Site
               </a>
             </p>
           </div>
