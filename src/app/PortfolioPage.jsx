@@ -5,6 +5,7 @@ import passwordGenerator from '../assets/images/password-generator.png'
 import noteTaker from '../assets/images/my-note-taker.png'
 import textEditor from '../assets/images/text-editor.png'
 import ecommerce from '../assets/images/ecommerce.png'
+import movieVault from '../assets/images/movie-vault.png'
 
 
 export default function PortfolioPage() {
@@ -101,6 +102,21 @@ export default function PortfolioPage() {
             </p>
           </div>
         </div>
+
+        <div className="image-card">
+        <h3>Project 3: Movie Vault</h3>
+          <a href="https://example.com/app7" target="_blank" rel="noopener noreferrer">
+            <img src={movieVault} alt="App 7" />
+          </a>
+          <div className="image-card-title">
+            <p>
+              <a href="https://github.com/asiabeoon/movie-vault" target="_blank" rel="noopener noreferrer">
+                Movie Vault
+              </a>
+            </p>
+          </div>
+        </div>
+        
       </div>
     </div>
     </div>
